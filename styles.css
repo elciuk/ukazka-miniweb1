@@ -4,19 +4,26 @@ html{
     color:#fff;
 }
 :root {
-    --blue:#2e71f2;
-    --grey:#505153;
-    --lightgrey:#cbcbcc;
-    --white:#fff;
-    --darkblue:#3c64af;
-    --lightblue:#7793c7;
-    --lightblack:#3b3d40;
-    --darkgrey:#656b6f;
-    --red:#9A3636;
-    --green:#3EAF95;
-    --gray:#838383;
-    --gold:#D9B548;
-    --purple:#B851D1;
+    --grey:rgba(80, 81, 83, 1);
+    --lightgrey:rgba(203, 203, 204, 1);
+    --white:rgba(255, 255, 255, 1);
+    --darkblue:rgba(60, 100, 175, 1);
+    --lightblue:rgba(119, 147, 199, 1);
+    --lightblack:rgba(59, 61, 64, 1);
+    --lightblackOpacity:rgba(59, 61, 64, 0.5); 
+    --darkgrey:rgba(101, 107, 111, 1);
+    --blue:rgba(46, 113, 242, 1);
+    --blueOpacity:rgba(46, 113, 242, 0.5);
+    --red:rgba(154, 54, 54, 1);
+    --redOpacity:rgba(154, 54, 54, 0.5);
+    --green:rgba(62, 175, 149, 1);
+    --greenOpacity:rgba(62, 175, 149, 0.5);
+    --gray:rgba(131, 131, 131, 1);
+    --grayOpacity:rgba(131, 131, 131, 0.5);
+    --gold:rgba(217, 181, 72, 1);
+    --goldOpacity:rgba(217, 181, 72, 0.5);
+    --purple:rgba(184, 81, 209, 1);
+    --purpleOpacity:rgba(184, 81, 209, 0.5);
 }
 #blue{
     background-color:var(--blue);
@@ -37,7 +44,13 @@ html{
     background-color: var(--purple);
 }
 #profilePic, #contactMeBtn, .bullet{
-    filter: drop-shadow(5px 5px 6px var(--lightblack));
+    filter: drop-shadow(-5px -5px 6px var(--lightblackOpacity));
+}
+.bullet:first-of-type{
+    filter: drop-shadow(-5px -5px 6px var(--blueOpacity));
+}
+.bullet:last-of-type{
+    filter: drop-shadow(-5px -5px 6px var(--blueOpacity));
 }
 #myBtn {
     display: none;
@@ -173,6 +186,9 @@ a{
 }
 .zmenaBarev{
     display:none;
+}
+.zmenaBarevMobilni{
+    display:block;
 }
 .meniciTlacitko{
     width:15px;
@@ -406,9 +422,7 @@ h1{
     .spravaText{
         color:var(--lightgrey);
     }
-   #landingPage > h1{
-        margin-top:-3%;
-    }
+
 
 #pricePage{
     background-color: var(--white);
@@ -485,7 +499,7 @@ h1{
     display:flex;
     flex-direction: column;
     align-items:center;
-    min-height:92vh;
+    min-height:97vh;
     width:100%;
 }
 .coDal{
@@ -625,7 +639,7 @@ h1{
         display:block;
     }
     .oMne:before{
-        content:"O MNĚ";
+        content:"O NÁS";
     }
     #oMne:checked + label:after,  #oMne:checked #oMne, #oMne:checked + label{
         content:"\2717";
@@ -655,6 +669,9 @@ h1{
        grid-column:1/2;
        grid-row:2/3;
        text-align:center;
+   }
+   .zmenaBarevMobilni{
+       display:none;
    }
     
    .desktopMenu{
@@ -730,20 +747,17 @@ h1{
         margin-bottom:0px;
     }
     .bulletText{
-        height:140px;
         margin-bottom:10px !important;
         max-width:80%;
         margin:auto;
         text-align: block;
     }
-    #secondBulletText{
-        height:110px;
-    }
+
     .bulletText br{
-        display:none;
+        
     }
     .bulletText .noWrap{
-        white-space: normal;
+        white-space: nowrap;
     }
     .hidden{
         display:none;
@@ -798,7 +812,7 @@ h1{
   .footerLinkSection{
       max-width:75%;
       margin:auto;
-      min-height:8vh;
+      min-height:3vh;
 }
 
 }
@@ -819,16 +833,12 @@ h1{
      font-size:250%;
  }
  .bulletText{
-    height:100px;
     max-width:80%;
     margin:auto;
     text-align: block;
-    font-size:140% !important;
+    font-size:140%;
     margin-bottom:1rem;
 }
-    #secondBulletText{
-        height:80px;
-    }
 .price{
     font-size:125% !important;
 }
