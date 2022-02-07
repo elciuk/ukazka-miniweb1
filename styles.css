@@ -1,0 +1,843 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:500;
+    color:#fff;
+}
+:root {
+    --blue:#2e71f2;
+    --grey:#505153;
+    --lightgrey:#cbcbcc;
+    --white:#fff;
+    --darkblue:#3c64af;
+    --lightblue:#7793c7;
+    --lightblack:#3b3d40;
+    --darkgrey:#656b6f;
+    --red:#9A3636;
+    --green:#3EAF95;
+    --gray:#838383;
+    --gold:#D9B548;
+    --purple:#B851D1;
+}
+#blue{
+    background-color:var(--blue);
+}
+#red{
+    background-color: var(--red);
+}
+#green{
+    background-color: var(--green);
+}
+#gray{
+    background-color: var(--gray);
+}
+#gold{
+    background-color: var(--gold);
+}
+#purple{
+    background-color: var(--purple);
+}
+#profilePic, #contactMeBtn, .bullet{
+    filter: drop-shadow(5px 5px 6px var(--lightblack));
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 35%;
+    right: 25px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--lightblack);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: transparent;
+    color:var(--lightblack);
+  }
+h1, .coDal, #contactMeBtn{
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    font-weight:800;
+}
+#napisteMi:hover{
+    text-decoration:underline;
+}
+.footerLinkSection{
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    padding-left:2vw;
+    padding-right:2vw;
+}
+#contactMeBtn:hover{
+    cursor: pointer;
+}
+#desktopName, #mobileName, #mobileNamePop, #overlay li, .desktopMenuItems > a, #oMeNadpis{
+    font-family:Arial, Verdana, helvetica, sans-serif;
+}
+#oMeNadpis{
+    letter-spacing:0.2rem;
+}
+
+#marketing:hover{
+     background: linear-gradient(175deg, var(--white) 55%, var(--blue)10%);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+#weby:hover{
+     background: repeating-linear-gradient(90deg,var(--grey) 8% 12%, var(--white) 12% 30%, var(--grey) 30% 32%);
+     -webkit-background-clip: text;
+     background-clip:text;
+     -webkit-text-fill-color: transparent;
+}
+
+#grafika:hover{
+    background: linear-gradient(180deg,var(--white) 25% 35%, var(--grey) 35% 40%, var(--white) 40% 50%, var(--grey) 50% 53%, var(--white) 53% 60%,
+    var(--grey) 60% 62%, var(--white) 62% 65%, var(--grey) 65% 70%, var(--white) 70% 75%, var(--grey) 75% 80%,
+    var(--white) 80% 85%, var(--grey) 85% 90%, var(--white) 90% 95%, var(--grey) 95% 100%);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.noWrap{
+    white-space:nowrap;
+}
+nav{
+    background-color: var(--grey);
+}
+p{
+    text-align:center;
+    font-size:120%;
+}
+a{
+    text-decoration:none;
+    color:var(--white);
+}
+
+.desktopMenu {
+    display:none;
+}
+#socialIcons a{
+    color:var(--lightgrey);
+}
+#socialIcons a:hover{
+    color:white;
+}
+#desktopFb, #desktopMail, #desktopName, .desktopMenuItems, .oMne{
+    font-family: arial,verdana, helvetica, sans-serif;
+    font-weight:800;
+}
+
+
+#mobileName, #mobileNamePop{
+    position:absolute;
+    text-align:left;
+    left:3.5vw;
+    top: 3vh;
+    font-weight:700;
+    letter-spacing:0.2rem;
+}
+#mobileNamePop{
+    background-color:var(--darkblue);
+    font-weight:500;
+    top:2vh;
+    padding: 3vh 0vh;
+    font-size:100%;
+    letter-spacing: 0.2rem;
+}
+
+#mobilePhone, #mobilePhoneOverlay{
+    position:absolute;
+    left: 50vw;
+    top:4vh;
+    text-decoration:none;
+    font-size:200%;
+    color:var(--lightgrey);
+}
+
+#mobilePhoneOverlay{
+    color:var(--darkblue);
+    background-color:var(--darkblue);
+}
+#mobileNumberOverlay{
+    font-size:90%;
+}
+.mobileMenuText{
+    text-align:left;
+}
+.highlight{
+    display:none;
+}
+.zmenaBarev{
+    display:none;
+}
+.meniciTlacitko{
+    width:15px;
+    height:15px;
+    border-radius:25%;
+    border:solid black 1px;
+}
+
+#overlay ul{
+    margin:auto;
+}
+#overlay li a:hover span{
+    display:inline;
+}
+#zacitRust{
+    text-align:center;
+    margin-top:2rem;
+}
+#zacitRust a:hover, .mobileContactMenu a:hover, #mobileNamePop a:hover{
+    text-decoration:underline;
+}
+.mobileContactMenu{
+    text-align:center;
+}
+.mobileContactMenu a{
+    color: var(--white);
+}
+
+.mobileOnlyTextDiv{
+    width:90%;
+}
+#overlay hr{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    color:var(--lightgrey);
+    height:1px;
+    background-color:var(--lightblue);
+    border-style:none;
+    width:90%;
+}
+/*#overlay * {
+    font-weight: 600;
+}
+*/
+/*end of inserted content*/
+
+body {
+    margin: auto;
+
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+}
+@keyframes bugfix {
+    from {
+        padding: 0;
+   }
+    to {
+        padding: 0;
+   }
+}
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+   }
+    to {
+        padding: 0;
+   }
+}
+#overlay-button {
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+}
+#overlay ul{
+    white-space:nowrap;
+}
+#overlay-button span {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: var(--white);
+    position: relative;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+#overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+}
+#overlay-button span:after {
+    top: 10px;
+}
+#overlay-button span:before, #overlay-button span:after {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: var(--white);
+    color:var(--white);
+    position: absolute;
+    content: "";
+    transition: all 0.2s ease-in-out;
+}
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: #333332;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+    display:block;
+ 
+}
+input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+    position:absolute;
+    right: 2.5em;
+    top: 3em;
+    padding: 26px 11px;
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+    opacity:1;
+}
+#overlay {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--darkblue);
+    z-index: 2;
+    visibility: hidden;
+    position: static;
+    display:none;
+
+}
+#overlay.active {
+    visibility: visible;
+}
+#overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+}
+#overlay ul li, .mobileContactMenu > a {
+    font-family: Arial, Verdana, helvetica, sans-serif;
+    letter-spacing:0.2rem;
+    font-size:80%;
+    font-weight:500;
+    line-height: 150%;
+}
+#overlay ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 140%;
+}
+#overlay ul li a:hover {
+    color: var(--white);    
+}
+/*#overlay ul:first-child{
+    padding-top:35vh;
+    margin-top:20vh;
+}
+*/
+
+
+/*begining of inserted content*/
+#sluzby{
+    margin-top:3%;
+}
+
+h1{
+    font-size:300%;
+    text-align: center;
+    line-height:3.5rem;
+    margin-bottom:0.5rem;
+    font-weight:800;
+}
+#landingPage, #pricePage, #contactPage{
+    margin:auto;
+}
+#landingPage{
+    background-color: var(--grey);
+    min-height:100vh;
+    display:flex;   
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+    padding-top:6rem;
+    padding-bottom:6rem;
+    max-width:100%;
+}
+    #profilePic{
+        max-width:40vw;
+        opacity:85%;
+        margin:auto;
+        margin-top:6vh;
+        margin-bottom:-2vh;
+    }
+    #profilePic:hover{
+        opacity:100%;
+    }
+    #arrow{
+        margin-bottom:5vh;
+        }
+    #contactMeBtn{
+        border-radius:40px;
+        padding:0.5em 1em;
+        background-color:var(--blue);
+        border:none;
+        color:var(--white);
+        font-size:100%;
+        font-weight:800;
+        margin-bottom:5vh;
+    }   
+    #contactMeBtn:hover, #contactMeBtn:active{
+        color:var(--blue);
+        background-color:var(--white);
+    }
+    .spravaText{
+        color:var(--lightgrey);
+    }
+   #landingPage > h1{
+        margin-top:-3%;
+    }
+
+#pricePage{
+    background-color: var(--white);
+    color:black;
+    width:100%;
+    min-height:100vh;
+}
+    #pricePage > h1{
+        font-size:200%;
+        margin-top:2rem;
+        color:var(--lightblack);
+        font-weight:900;
+    }
+    #pricePage > p{
+        text-align:center;
+        margin-bottom:2em;
+        color:var(--darkgrey);
+    }
+    .bullets{
+        display: grid;
+        grid-template-rows: 1fr;
+        padding-bottom:3rem;
+        margin:auto;
+        max-width:90%;
+        align-items: center;
+  
+    }
+    .bulletWholeDesc{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top:0.5rem;
+        margin-bottom:2rem;
+    }
+    .bulletWholeDesc > p{
+        color:var(--darkgrey);
+        line-height:1rem;
+    }
+    .bulletWholeDesc > *{
+        text-align:center;
+        font-size: 100%;
+        margin-bottom:0.7rem;
+    }
+    .bullet{
+        display:block;
+        max-width:30vw;
+        margin-top:auto;
+        margin:auto;
+        padding-bottom:3%;
+    }
+
+    .bulletText, .priceSecondary{
+        font-weight:400 !important;
+    }
+    .bulletText{
+        text-align:block;
+    }
+    #firstBulletDesc{
+        margin-bottom:1.5rem;
+    }
+    .price{
+        font-size:110%;
+        font-weight:900;
+        font-family:Arial, Verdana, helvetica, sans-serif;
+    }
+    .Arrow, #arrowFirst, #arrowSecond{
+        display:none;
+    }
+    #bulletLastArrow{
+        display:inline;
+    }
+#contactPage{
+    background-color: var(--blue);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    min-height:92vh;
+    width:100%;
+}
+.coDal{
+    margin: 6% auto 3rem auto;
+}
+.contactPageContainer{
+    display:flex;
+    flex-direction:column;
+    align-content:space-around;
+    margin:auto;
+    margin-top:2vh;
+    max-width: 80vw;
+}
+.contactPageContainer > p{
+    text-align:left;
+    margin-bottom:2vh;
+}
+.contactHr{
+    margin-bottom:2vh;
+}
+.contactText1{
+    font-size:150%;
+}
+.contactText2{
+    font-size:85%;
+    font-weight:700;
+    padding-bottom:8vh;
+}
+.linkStazeni{
+    text-decoration:underline;
+}
+.hidden3{
+    display:none;
+} 
+    .LinkContainer{
+        background-color:var(--grey);
+        font-size:75%;
+        width:100%;
+        padding-top: 0.5rem;
+        padding-bottom:0.5rem;
+    }
+    #test{
+        display:none;
+    }
+@media (max-width:361px){
+    #pricePage, #contactPage, body,.LinkContainer, .footerLinkSection{
+        width:100%;
+    }
+    body{
+        margin:0px;
+    }
+    .footerLinkSection{
+        padding:0px;
+    }
+    .coDal{
+        font-size:80%;
+    }
+    .contactText1{
+        font-size:120%;
+    }
+    #pricePage >h1{
+        font-size:130%;
+        padding:0px;
+    }
+    #landingPage > h1{
+        font-size:180%;
+    }
+    #pricePage >p{
+        padding:0px;
+        font-size:100%;
+    }
+    .bullets{
+        margin:0px;
+    }
+    #overlay ul{
+        padding-top:10vh;
+    }
+    .bulletText > .noWrap{
+        white-space:normal;
+    }
+    .bulletText > br{
+        display:inline;
+    }
+}
+@media (max-width:550px){
+    .bulletText > .noWrap{
+        white-space:nowrap;
+    }
+    .bulletText > br{
+        display:none;
+    }
+    #overlay ul{
+        padding-top:10vh;
+    }
+  .bulletWholeDesc{
+      max-width:85%;
+      margin:auto;
+  }
+
+}
+@media (max-width:815px){
+    #pricePage h1{
+        line-height:2rem;
+    }
+}
+@media (min-width:600px){
+    #profilePic{
+        max-width:30vw;
+        margin:auto;
+        margin-top:10vh;
+    }
+    .noWrap{
+        white-space:nowrap;
+    }
+    
+    #myBtn{
+        display:none;
+    }
+}
+@media (min-width:816px){
+    .bulletText > br{
+        display:inline;
+    }
+    #oMnePop{
+        display:none;
+        position:absolute;
+        top:20%;
+        left:60%;
+        max-width:30%;
+        text-align:block;
+        font-weight:600;
+    }
+    #oMnePop a:hover, .contactText1 a:hover{
+        text-decoration:underline;
+    }
+    #oMne:checked ~ #oMnePop{
+        display:block;
+    }
+    .oMne:before{
+        content:"O MNĚ";
+    }
+    #oMne:checked + label:after,  #oMne:checked #oMne, #oMne:checked + label{
+        content:"\2717";
+        position:absolute;
+        top:18%;
+        left:92%;
+        font-size:100%;
+        z-index:5;
+    }
+  #oMne:checked + label:after{
+        position:static;
+
+    }
+
+    #oMne:checked + label:before{
+        display:none;
+    }
+
+   .mobileOnlyMenu{
+       display:none;
+   }
+   .hidden3{
+       display:inline;
+   }
+   .zmenaBarev{
+       display:block;
+       grid-column:1/2;
+       grid-row:2/3;
+       text-align:center;
+   }
+    
+   .desktopMenu{
+       display:grid;
+        grid-template-columns: 33% 33% 33%;
+        padding-top:2vh;
+   }
+   #desktopName{
+       grid-column:1/2;
+   }
+   .desktopMenuItems{
+       grid-column:2/3;
+       margin:auto;
+       white-space:nowrap;
+   }
+   .desktopMenuItems > a:hover, #oMne:hover, .oMne:hover{
+    text-decoration:underline;
+    cursor:pointer;
+   }
+
+   .desktopMenuSocial{
+       grid-column:3/4;
+       margin:auto;
+       font-weight:500;
+   }
+   .desktopMenuSocial > a{
+       font-size:150%;
+   }
+   .desktopMenu a{
+       color:var(--white);
+       text-decoration:none;
+       padding:.5vw;
+   }
+   
+    #profilePic{
+        max-width:15vw;
+        margin:auto;
+    }
+
+    #pricePage > h1{
+        margin-top:5rem;
+        margin-bottom:2rem;
+        font-size:350%;
+    }
+    #pricePage >p:first-of-type{
+        font-size:150%;
+    }
+    .bullets{
+        grid-template-columns:auto auto auto;
+        margin:auto;
+        padding-top:2%;
+        padding-bottom:3rem;
+        align-items: flex-start;
+    }
+    .bullet{
+        grid-row:1/2;
+        max-width:100%;
+        margin:auto auto;
+        margin-bottom:2rem;
+        padding-bottom:0px;
+    }
+    .bulletWholeDesc{
+        padding-top:0rem;
+        grid-row:2/3;
+        padding:0.5rem;
+        margin-bottom:0px;
+    }
+    .bulletWholeDesc > *{
+        text-align:block;
+        font-size: 100%;
+        line-height:1.5rem;
+        font-weight:500;
+        margin-bottom:0px;
+    }
+    .bulletText{
+        height:140px;
+        margin-bottom:10px !important;
+        max-width:80%;
+        margin:auto;
+        text-align: block;
+    }
+    #secondBulletText{
+        height:110px;
+    }
+    .bulletText br{
+        display:none;
+    }
+    .bulletText .noWrap{
+        white-space: normal;
+    }
+    .hidden{
+        display:none;
+    }
+    .bulletWholeDesc > P {
+        line-height:1.5rem;
+        font-size:120%;
+        text-align:block;
+        font-weight:600;
+    }
+
+    #arrowFirst, #arrowSecond{
+        display:inline;
+    }
+    .price{
+        font-size:100%;
+        padding:1rem;
+        padding-top:1.5rem;
+        font-weight:900;
+    }
+    .bulletArrow{
+        display:inline;
+        font-size:150%;
+    }
+    .coDal{
+        font-size:160%;
+        font-weight:500;
+        margin: 6% auto 3rem auto;
+    }
+  .contactPageContainer{
+      display:grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 5vw;
+      max-width:90vw;
+      padding: 0rem 2rem;
+      
+  }
+  .contactHr{
+      height:1px;
+      width:90%;
+      grid-row:2/3;
+  }
+  .contactText1{
+      grid-row:1/2;
+      font-size:160%;
+  }
+  .contactText2{    
+      grid-row:3/4;
+      font-size:100%;
+  }
+  
+  .footerLinkSection{
+      max-width:75%;
+      margin:auto;
+      min-height:8vh;
+}
+
+}
+@media (min-width:1225px){
+ .hidden{
+     display:inline;
+ }
+ .bulletText{
+     font-size:350%;
+ }
+ .contactPageContainer{
+    padding:0px 1rem;
+ }
+ #oMne:checked + label:after,  #oMne:checked #oMne, #oMne:checked + label{
+     left:80%;
+ }
+ .contactText1{
+     font-size:250%;
+ }
+ .bulletText{
+    height:100px;
+    max-width:80%;
+    margin:auto;
+    text-align: block;
+    font-size:140% !important;
+    margin-bottom:1rem;
+}
+    #secondBulletText{
+        height:80px;
+    }
+.price{
+    font-size:125% !important;
+}
+
+}
+/*kod pouze pro Safari*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ 
+   #desktopMail, #desktopPhone{
+       font-size:200%;
+   }
+}
