@@ -388,19 +388,19 @@ h1{
     flex-direction: column;
     flex-wrap:nowrap;
     align-items: center;
-    padding-top:6rem;
+    padding-top:4rem;
     padding-bottom:6rem;
     max-width:100%;
 }
     #profilePic{
         max-width:40vw;
-        opacity:85%;
+        opacity:100%;
         margin:auto;
         margin-top:6vh;
         margin-bottom:-2vh;
     }
     #profilePic:hover{
-        opacity:100%;
+        opacity:85%;
     }
     #arrow{
         margin-bottom:5vh;
@@ -600,10 +600,15 @@ h1{
   }
 
 }
-@media (max-width:815px){
+@media (max-width:845px){
     #pricePage h1{
         line-height:2rem;
+        margin-top:5vh;
     }
+    #landingPage{
+        justify-content:space-evenly;
+    }
+
 }
 @media (min-width:600px){
     #profilePic{

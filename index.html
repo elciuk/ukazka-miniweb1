@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-        <title>Adam Macura vizitka</title>
+        <title>Ukázka miniweb1</title>
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="http://www.amfi.cz/files/favicon.ico" />
@@ -45,7 +45,59 @@
 <meta property="og:description" content="Správa Facebooku a reklamních kampaní, DAN Europe Česko, Pojištění DAN">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <style>
-    
+    /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
     </style>
     
 
@@ -81,7 +133,7 @@
 
        <nav class="navigation">
            <div class="desktopMenu">
-                <p id="desktopName"><a href="#desktopName">ADAM MACURA</a></p>
+                <p id="desktopName"><a href="#desktopName">TOMÁŠ JEDNO</a></p>
                 <div class="zmenaBarev">
                     <p>Zmenit barvu vizitky</p>
                     <div>
@@ -99,11 +151,11 @@
                     <a href="#sluzby">CENÍK</a>
                     <input type="checkbox" id="oMne" /><label for="oMne" class="oMne"></label>
                     <p id="oMnePop">Vdechneme digitálnímu světu život<br>
-                        a smysl, který ocení zákazníci i <br>
+                        a smysl, který ocení zákazníci i naši<br>
                         partneři. Posuneme Vaše podnikání <br>
                         vpřed a naučíme Vás strategické <br>
                         zásady a postupy pro konkurenční <br>
-                        růst a navýšení klientů a zisku.<br>
+                        růst s nárůstem klientů a zisku.<br>
                         <a href="tel:+420773926670" title="Zavolejte mi">začít</a> | <a href="#sluzby" title="Koukněte, co Vám můžu nabídnout">růst</a></p>
                 </div>
                 <div class="desktopMenuSocial" id="socialIcons">
@@ -131,12 +183,12 @@
                          <p id="oMeNadpis">O NÁS</p>
                           <p class="mobileMenuText">
                             Vdechneme digitálnímu světu život<br>
-                        a smysl, který ocení zákazníci i <br>
-                        partneři. Posuneme Vaše podnikání <br>
-                        vpřed a naučíme Vás strategické <br>
-                        zásady a postupy pro konkurenční <br>
-                        růst a navýšení klientů a zisku.<br>
-                        </p>
+                            a smysl, který ocení zákazníci i naši<br>
+                            partneři. Posuneme Vaše podnikání <br>
+                            vpřed a naučíme Vás strategické <br>
+                            zásady a postupy pro konkurenční <br>
+                            růst s nárůstem klientů a zisku.<br>
+                          </p>
                         <p class="mobileMenuText" id="zacitRust" title="Zavolejte mi"><a href="tel:+420773926670">začít</a> | <a href="#sluzby" title="Koukněte, co Vám můžu nabídnout">růst</a></p>
                         </div>
 
@@ -166,7 +218,7 @@
         <div class="container">
             <section  id="landingPage">
                 <a href="https://www.facebook.com/pavel.e.cink/" target="_blank" alt="Facebook" title="Skočte na můj Facebook"><img id="profilePic" src="https://toxiclab.cz/wp-content/uploads/2022/02/logo_vzor_vizitky.png" /></a>
-                <h1 >Umíme <span id="marketing">marketing</span><br> <span id="weby">weby</span> a <span id="grafika">grafika</span></h1>
+                <h1 >Umíme <span id="marketing">marketing</span><br> <span id="weby">weby</span> a <span id="grafika">grafiku</span></h1>
                 <p class="spravaText">Správa sociálních sítí, tvorba E-shopů<br> a další marketingové služby.</p>
                 <p class="spravaText" id="arrow">&#8595;</p>
                 <a href="#contactPage"><button id="contactMeBtn">KONTAKTUJTE NÁS</button></a>
@@ -238,7 +290,7 @@
                         <span class="noWrap">a hned to společně rozjedeme</span><br> 
                         <span class="noWrap"><a href="https://toxiclab.cz" alt="odkaz na Toxic Lab" title="Koukněte náš tým na Toxic Lab">⌬ ToxicLab.cz</a></span></p>
                     <hr class="contactHr">
-                    <p class="contactText2">NEJSME AGENTURE, JSME DIGI TÝM <a href="toxiclab.cz" alt="odkaz na Toxic Lab" title="Odkaz na web Toxic Lab"><span class="noWrap">⌬ TOXICLAB.CZ</span></a><br>
+                    <p class="contactText2">NEJSME AGENTURA, JSME DIGI TÝM <a href="toxiclab.cz" alt="odkaz na Toxic Lab" title="Odkaz na web Toxic Lab"><span class="noWrap">⌬ TOXICLAB.CZ</span></a><br>
                         TELEFON: <a href="tel:+420773926670" alt="zavolejte agentuře toxic lab" title="Zavolejte agentuře Toxic Lab"><span class="noWrap">+420 773 926 670</span></a></p>
                 </div>
                 
